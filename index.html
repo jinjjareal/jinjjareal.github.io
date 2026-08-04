@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="JINJJA is an independent game studio creating unexpected games with inventive mechanics."
+    >
+
+    <title>JINJJA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Studio logo -->
+    <header class="site-header">
+        <a
+            class="site-logo"
+            href="#top"
+            aria-label="Return to the top of the JINJJA homepage"
+        >
+            <img
+                src="assets/images/jinjja-logo.png"
+                alt="JINJJA"
+            >
+        </a>
+    </header>
+
+    <main id="top">
+        <!-- Games -->
+        <section
+            class="games"
+            aria-labelledby="games-title"
+        >
+            <div class="section-container">
+                <h1
+                    id="games-title"
+                    class="section-title"
+                >
+                    Our Games
+                </h1>
+
+                <div class="game-carousel">
+                    <!-- Previous button -->
+                    <button
+                        class="carousel-button carousel-button--previous"
+                        type="button"
+                        aria-label="Show previous game"
+                    >
+                        <span aria-hidden="true">←</span>
+                    </button>
+
+                    <!-- Carousel cards -->
+                    <div
+                        class="carousel-viewport"
+                        aria-live="polite"
+                    >
+                        <div class="carousel-track">
+                            <!-- Unannounced game -->
+                            <article
+                                class="game-card game-card--placeholder"
+                                data-game-title="Unannounced Game"
+                                data-game-description="A future Jinjja project."
+                                aria-label="Unannounced game"
+                            >
+                                <div class="game-card__placeholder">
+                                    <img
+                                    class="game-card__placeholder-logo"
+                                    src="assets/images/jinjja-label.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                    >
+                                </div>
+                            </article>
+
+                            <!-- Yuzutsu -->
+                            <article
+                                class="game-card game-card--active"
+                                data-game-title="Q2 2027"
+                                data-game-description="Samurais. Ninjas. Snow monkeys. Hot springs. You are Taomaru, a capybara monk who treats every battle like a minor inconvenience. As you casually stroll through a dangerous mission, outsmart and defeat your enemies with the ancient art of Yuzutsu."
+                            >
+                                <a
+                                    class="game-card__link"
+                                    href="yuzutsu.html"
+                                    aria-label="Learn more about Yuzutsu"
+                                >
+                                    <img
+                                        class="game-card__image"
+                                        src="assets/images/yuzutsu-capsule.png"
+                                        alt="Yuzutsu"
+                                    >
+                                </a>
+                            </article>
+
+                            <!-- Unannounced game -->
+                            <article
+                                class="game-card game-card--placeholder"
+                                data-game-title="Unannounced Game"
+                                data-game-description="A future Jinjja project."
+                                aria-label="Unannounced game"
+                            >
+                                <div class="game-card__placeholder">
+                                    <img
+                                    class="game-card__placeholder-logo"
+                                    src="assets/images/jinjja-label.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                    >
+                                </div>
+                            </article>
+
+                            <!-- Unannounced game -->
+                            <article
+                                class="game-card game-card--placeholder"
+                                data-game-title="Unannounced Game"
+                                data-game-description="A future Jinjja project."
+                                aria-label="Unannounced game"
+                            >
+                                <div class="game-card__placeholder">
+                                    <img
+                                    class="game-card__placeholder-logo"
+                                    src="assets/images/jinjja-label.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                    >
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Next button -->
+                    <button
+                        class="carousel-button carousel-button--next"
+                        type="button"
+                        aria-label="Show next game"
+                    >
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <!-- Active game description -->
+                <div
+                    class="game-description"
+                    aria-live="polite"
+                >
+                    <h2 class="game-description__title">
+                        Q2 2027
+                    </h2>
+
+                    <p class="game-description__text">
+                        Samurais. Ninjas. Snow monkeys. Hot springs.
+                        You are Taomaru, a capybara monk who treats
+                        every battle like a minor inconvenience.
+                        As you casually stroll through a dangerous
+                        mission, outsmart and defeat your enemies
+                        with the ancient art of Yuzutsu.
+                    </p>
+                </div>
+
+                <!-- Generated automatically by JavaScript -->
+                <div
+                    class="carousel-pagination"
+                    aria-label="Choose a game"
+                ></div>
+            </div>
+        </section>
+
+        <!-- Studio information -->
+        <section class="studio-info">
+            <div class="section-container studio-info__grid">
+                <!-- About -->
+                <div
+                    class="about"
+                    aria-labelledby="about-title"
+                >
+                    <h2
+                        id="about-title"
+                        class="section-title"
+                    >
+                        About
+                    </h2>
+
+                    <p>
+                        At Jinjja, we believe the best games are the ones
+                        players don't see coming. We craft experiences
+                        that subvert expectations through inventive
+                        mechanics that are simple in concept yet rich
+                        in possibilities. Every project begins with one
+                        big question: “What can this game do that others
+                        can't?”
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div
+                    class="contact"
+                    aria-labelledby="contact-title"
+                >
+                    <h2
+                        id="contact-title"
+                        class="section-title"
+                    >
+                        Contact
+                    </h2>
+
+                    <p>
+                        For business inquiries:
+                    </p>
+
+                    <a
+                        class="contact__email"
+                        href="mailto:jinjja.official@gmail.com"
+                    >
+                        jinjja.official@gmail.com
+                    </a>
+
+                    <!--
+                    <nav
+                        class="social-links"
+                        aria-label="JINJJA social media"
+                    >
+                        <a
+                            href="mailto:jinjja.official@gmail.com"
+                            aria-label="Email JINJJA"
+                        >
+                            Email
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="JINJJA on X"
+                        >
+                            X
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="JINJJA on YouTube"
+                        >
+                            YouTube
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="JINJJA on Steam"
+                        >
+                            Steam
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="JINJJA on Discord"
+                        >
+                            Discord
+                        </a>
+                    </nav>
+                    -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; 2026 JINJJA LLC. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
