@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N782JCL40"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5N782JCL40');
-</script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +9,15 @@
     <title>YUZUTSU</title>
 
     <link rel="icon" type="image/png" href="assets/images/yuzutsu/yuzutsu-favicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N782JCL40"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5N782JCL40');
+    </script>
 
     <link rel="stylesheet" href="css/yuzutsu.css">
     <script src="js/yuzutsu.js" defer></script>
@@ -36,7 +35,7 @@
     </a>
 
     <a class="press-kit-button"
-       href="YOUR_GOOGLE_DRIVE_PRESS_KIT_LINK"
+       href="https://drive.google.com/drive/folders/18LwGQkb94D5IC4MFbi_P8l16iuYItbhD?usp=drive_link"
        target="_blank"
        rel="noopener noreferrer">
         <img src="assets/images/yuzutsu/yuzutsu-kit.png"
@@ -148,49 +147,74 @@
 
     <div class="game-content__right">
 
-        <section class="gallery">
+        <section class="gallery" aria-label="Yuzutsu screenshots">
 
-            <div class="gallery-grid">
+            <button class="gallery-preview"
+                    type="button"
+                    data-full-image="assets/images/yuzutsu/screenshots/SS_0.jpg"
+                    aria-label="Open selected screenshot full size">
+                <img id="gallery-preview-image"
+                     src="assets/images/yuzutsu/screenshots/SS_0.jpg"
+                     alt="Yuzutsu gameplay screenshot 1">
+            </button>
 
-                <button class="gallery-item"
-                        type="button"
-                        data-full-image="assets/images/yuzutsu/screenshots/screenshot-01.png"
-                        aria-label="View screenshot 1">
-                    <img src="assets/images/yuzutsu/screenshots/screenshot-01.png"
-                         alt="Yuzutsu gameplay screenshot 1">
+            <div class="gallery-grid" aria-label="Choose a screenshot">
+
+                <button class="gallery-item is-active" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_0.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 1"
+                        aria-label="Select screenshot 1" aria-pressed="true">
+                    <img src="assets/images/yuzutsu/screenshots/SS_0.jpg" alt="" aria-hidden="true">
                 </button>
 
-                <button class="gallery-item"
-                        type="button"
-                        data-full-image="assets/images/yuzutsu/screenshots/screenshot-02.png"
-                        aria-label="View screenshot 2">
-                    <img src="assets/images/yuzutsu/screenshots/screenshot-02.png"
-                         alt="Yuzutsu gameplay screenshot 2">
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_1.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 2"
+                        aria-label="Select screenshot 2" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_1.jpg" alt="" aria-hidden="true">
                 </button>
 
-                <button class="gallery-item"
-                        type="button"
-                        data-full-image="assets/images/yuzutsu/screenshots/screenshot-03.png"
-                        aria-label="View screenshot 3">
-                    <img src="assets/images/yuzutsu/screenshots/screenshot-03.png"
-                         alt="Yuzutsu gameplay screenshot 3">
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_2.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 3"
+                        aria-label="Select screenshot 3" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_2.jpg" alt="" aria-hidden="true">
                 </button>
 
-                <!-- <button class="gallery-item"
-                        type="button"
-                        data-full-image="assets/images/yuzutsu/screenshots/screenshot-04.png"
-                        aria-label="View screenshot 4">
-                    <img src="assets/images/yuzutsu/screenshots/screenshot-04.png"
-                         alt="Yuzutsu gameplay screenshot 4">
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_3.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 4"
+                        aria-label="Select screenshot 4" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_3.jpg" alt="" aria-hidden="true">
                 </button>
 
-                <button class="gallery-item"
-                        type="button"
-                        data-full-image="assets/images/yuzutsu/screenshots/screenshot-05.png"
-                        aria-label="View screenshot 5">
-                    <img src="assets/images/yuzutsu/screenshots/screenshot-05.png"
-                         alt="Yuzutsu gameplay screenshot 5">
-                </button> -->
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_4.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 5"
+                        aria-label="Select screenshot 5" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_4.jpg" alt="" aria-hidden="true">
+                </button>
+
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_5.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 6"
+                        aria-label="Select screenshot 6" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_5.jpg" alt="" aria-hidden="true">
+                </button>
+
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_6.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 7"
+                        aria-label="Select screenshot 7" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_6.jpg" alt="" aria-hidden="true">
+                </button>
+
+                <button class="gallery-item" type="button"
+                        data-full-image="assets/images/yuzutsu/screenshots/SS_7.jpg"
+                        data-alt="Yuzutsu gameplay screenshot 8"
+                        aria-label="Select screenshot 8" aria-pressed="false">
+                    <img src="assets/images/yuzutsu/screenshots/SS_7.jpg" alt="" aria-hidden="true">
+                </button>
 
             </div>
 
